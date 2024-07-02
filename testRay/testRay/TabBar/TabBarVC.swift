@@ -17,6 +17,7 @@ final class TabBarVC: UITabBarController {
     
     private func generateTabBar() {
         tabBar.unselectedItemTintColor = .white
+        tabBar.tintColor = .systemPink
         viewControllers = [
             generateTabBarWithItem(viewController: UINavigationController(rootViewController: SearchVC()), tabBatItem: TabBarItem.searchItem),
             generateTabBarWithItem(viewController: UINavigationController(rootViewController: FavoriteVC()), tabBatItem: TabBarItem.favoriteItem)]

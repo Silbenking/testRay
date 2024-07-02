@@ -13,7 +13,7 @@ struct TestModel {
     let size: String
 }
 
-class SearchVC: UIViewController {
+final class SearchVC: UIViewController {
     
     private let searchView = SearchView()
     

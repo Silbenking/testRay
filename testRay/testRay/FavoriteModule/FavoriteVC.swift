@@ -7,23 +7,42 @@
 
 import UIKit
 
-class FavoriteVC: UIViewController {
+final class FavoriteVC: UIViewController {
+    
+    let testMod = [ TestModel(image: "icon", name: "test", size: "30x30"),
+                    TestModel(image: "icon", name: "test", size: "30x30"),
+                    TestModel(image: "icon", name: "test", size: "30x30"),
+                    TestModel(image: "icon", name: "test", size: "30x30"),
+                    TestModel(image: "icon", name: "test", size: "30x30")
+    ]
+    
+   private let favoriteView = FavoriteView()
+    
+    override func loadView() {
+        self.view = favoriteView
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        setupTableView()
+    }
 
-        // Do any additional setup after loading the view.
+    private func setupTableView() {
+        favoriteView.iconTable.dataSource = self
+    }
+}
+
+extension FavoriteVC: UITableViewDataSource {
+
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        testMod.count
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "IconeCell", for: indexPath) as? IconeCell else {fatalError()}
+        let test = testMod[indexPath.row]
+        cell.configure(with: test)
+        return cell
     }
-    */
-
 }
+

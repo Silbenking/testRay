@@ -12,11 +12,13 @@
 		A29A76702C327EF700CAC746 /* SearchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A29A766F2C327EF700CAC746 /* SearchVC.swift */; };
 		A29A76752C327EF800CAC746 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A29A76742C327EF800CAC746 /* Assets.xcassets */; };
 		A29A76782C327EF800CAC746 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = A29A76772C327EF800CAC746 /* Base */; };
-		A29A76812C32842D00CAC746 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = A29A76802C32842D00CAC746 /* SnapKit */; };
 		A29A76852C32905F00CAC746 /* TabBarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A29A76842C32905F00CAC746 /* TabBarVC.swift */; };
 		A29A76892C332D9F00CAC746 /* FavoriteVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A29A76882C332D9F00CAC746 /* FavoriteVC.swift */; };
 		A29A768C2C33D2DA00CAC746 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A29A768B2C33D2DA00CAC746 /* SearchView.swift */; };
 		A29A768E2C340F6400CAC746 /* IconeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A29A768D2C340F6400CAC746 /* IconeCell.swift */; };
+		A29A76912C3477F900CAC746 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = A29A76902C3477F900CAC746 /* SnapKit */; };
+		A29A76932C3477F900CAC746 /* SnapKit-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = A29A76922C3477F900CAC746 /* SnapKit-Dynamic */; };
+		A29A76952C34793200CAC746 /* FavoriteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A29A76942C34793200CAC746 /* FavoriteView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +33,7 @@
 		A29A76882C332D9F00CAC746 /* FavoriteVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteVC.swift; sourceTree = "<group>"; };
 		A29A768B2C33D2DA00CAC746 /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
 		A29A768D2C340F6400CAC746 /* IconeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconeCell.swift; sourceTree = "<group>"; };
+		A29A76942C34793200CAC746 /* FavoriteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,7 +41,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A29A76812C32842D00CAC746 /* SnapKit in Frameworks */,
+				A29A76912C3477F900CAC746 /* SnapKit in Frameworks */,
+				A29A76932C3477F900CAC746 /* SnapKit-Dynamic in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,6 +72,7 @@
 				A29A766D2C327EF700CAC746 /* SceneDelegate.swift */,
 				A29A76872C332D7900CAC746 /* TabBar */,
 				A29A768A2C332DA900CAC746 /* FavoriteModule */,
+				A29A76962C347B3400CAC746 /* Cell */,
 				A29A76862C332D6700CAC746 /* SearchModele */,
 				A29A76742C327EF800CAC746 /* Assets.xcassets */,
 				A29A76762C327EF800CAC746 /* LaunchScreen.storyboard */,
@@ -81,7 +86,6 @@
 			children = (
 				A29A766F2C327EF700CAC746 /* SearchVC.swift */,
 				A29A768B2C33D2DA00CAC746 /* SearchView.swift */,
-				A29A768D2C340F6400CAC746 /* IconeCell.swift */,
 			);
 			path = SearchModele;
 			sourceTree = "<group>";
@@ -98,8 +102,17 @@
 			isa = PBXGroup;
 			children = (
 				A29A76882C332D9F00CAC746 /* FavoriteVC.swift */,
+				A29A76942C34793200CAC746 /* FavoriteView.swift */,
 			);
 			path = FavoriteModule;
+			sourceTree = "<group>";
+		};
+		A29A76962C347B3400CAC746 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				A29A768D2C340F6400CAC746 /* IconeCell.swift */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -119,7 +132,8 @@
 			);
 			name = testRay;
 			packageProductDependencies = (
-				A29A76802C32842D00CAC746 /* SnapKit */,
+				A29A76902C3477F900CAC746 /* SnapKit */,
+				A29A76922C3477F900CAC746 /* SnapKit-Dynamic */,
 			);
 			productName = testRay;
 			productReference = A29A76682C327EF700CAC746 /* testRay.app */;
@@ -150,7 +164,7 @@
 			);
 			mainGroup = A29A765F2C327EF700CAC746;
 			packageReferences = (
-				A29A767F2C32842D00CAC746 /* XCRemoteSwiftPackageReference "SnapKit" */,
+				A29A768F2C3477F900CAC746 /* XCRemoteSwiftPackageReference "SnapKit" */,
 			);
 			productRefGroup = A29A76692C327EF700CAC746 /* Products */;
 			projectDirPath = "";
@@ -178,6 +192,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A29A76952C34793200CAC746 /* FavoriteView.swift in Sources */,
 				A29A76702C327EF700CAC746 /* SearchVC.swift in Sources */,
 				A29A766C2C327EF700CAC746 /* AppDelegate.swift in Sources */,
 				A29A76852C32905F00CAC746 /* TabBarVC.swift in Sources */,
@@ -397,7 +412,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		A29A767F2C32842D00CAC746 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+		A29A768F2C3477F900CAC746 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
 			requirement = {
@@ -408,10 +423,15 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		A29A76802C32842D00CAC746 /* SnapKit */ = {
+		A29A76902C3477F900CAC746 /* SnapKit */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = A29A767F2C32842D00CAC746 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			package = A29A768F2C3477F900CAC746 /* XCRemoteSwiftPackageReference "SnapKit" */;
 			productName = SnapKit;
+		};
+		A29A76922C3477F900CAC746 /* SnapKit-Dynamic */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A29A768F2C3477F900CAC746 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = "SnapKit-Dynamic";
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
