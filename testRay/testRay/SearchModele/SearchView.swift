@@ -12,8 +12,11 @@ final class SearchView: UIView {
     
     lazy var searchBar: UISearchBar = {
        let searchBar = UISearchBar()
-        searchBar.placeholder = "Поиск"
-        searchBar.barTintColor = .white
+        searchBar.searchTextField.attributedPlaceholder =  NSAttributedString(
+            string: "Поиск",
+            attributes: [.foregroundColor: UIColor.white]
+        )
+        searchBar.barTintColor = .black
         searchBar.searchTextField.textColor = .white
         return searchBar
     }()
@@ -23,13 +26,16 @@ final class SearchView: UIView {
         let largeConfig = UIImage.SymbolConfiguration(pointSize: 140, weight: .bold, scale: .large)
         let largeSearch = UIImage(systemName: "magnifyingglass.circle.fill", withConfiguration: largeConfig)
         button.setImage(largeSearch, for: .normal)
+        button.tintColor = .white
         button.imageView?.contentMode = .scaleAspectFit
         return button
     }()
     
     lazy var iconTable: UITableView = {
        let table = UITableView()
+        table.register(IconeCell.self, forCellReuseIdentifier: "IconeCell")
         table.estimatedRowHeight = UITableView.automaticDimension
+        table.backgroundColor = .black
         return table
     }()
 
@@ -45,7 +51,7 @@ final class SearchView: UIView {
     
     private func setupView() {
         self.backgroundColor = .black
-        [searchBar, searchButton].forEach { self.addSubview($0)}
+        [searchBar, searchButton, iconTable].forEach { self.addSubview($0)}
     }
     
     private func setupLauout() {
@@ -59,6 +65,12 @@ final class SearchView: UIView {
             make.centerY.equalTo(searchBar.snp.centerY)
             make.trailing.equalToSuperview().inset(20)
             make.size.equalTo(CGSize(width: 40, height: 40))
+        }
+        
+        iconTable.snp.makeConstraints { make in
+            make.top.equalTo(searchBar.snp.bottom).offset(10)
+            make.horizontalEdges.equalTo(10)
+            make.bottom.equalToSuperview()
         }
     }
     

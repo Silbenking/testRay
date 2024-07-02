@@ -16,6 +16,7 @@
 		A29A76852C32905F00CAC746 /* TabBarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A29A76842C32905F00CAC746 /* TabBarVC.swift */; };
 		A29A76892C332D9F00CAC746 /* FavoriteVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A29A76882C332D9F00CAC746 /* FavoriteVC.swift */; };
 		A29A768C2C33D2DA00CAC746 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A29A768B2C33D2DA00CAC746 /* SearchView.swift */; };
+		A29A768E2C340F6400CAC746 /* IconeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A29A768D2C340F6400CAC746 /* IconeCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,7 @@
 		A29A76842C32905F00CAC746 /* TabBarVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarVC.swift; sourceTree = "<group>"; };
 		A29A76882C332D9F00CAC746 /* FavoriteVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteVC.swift; sourceTree = "<group>"; };
 		A29A768B2C33D2DA00CAC746 /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
+		A29A768D2C340F6400CAC746 /* IconeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconeCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,7 @@
 			children = (
 				A29A766F2C327EF700CAC746 /* SearchVC.swift */,
 				A29A768B2C33D2DA00CAC746 /* SearchView.swift */,
+				A29A768D2C340F6400CAC746 /* IconeCell.swift */,
 			);
 			path = SearchModele;
 			sourceTree = "<group>";
@@ -181,6 +184,7 @@
 				A29A766E2C327EF700CAC746 /* SceneDelegate.swift in Sources */,
 				A29A768C2C33D2DA00CAC746 /* SearchView.swift in Sources */,
 				A29A76892C332D9F00CAC746 /* FavoriteVC.swift in Sources */,
+				A29A768E2C340F6400CAC746 /* IconeCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
