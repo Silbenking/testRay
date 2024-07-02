@@ -15,6 +15,7 @@
 		A29A76812C32842D00CAC746 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = A29A76802C32842D00CAC746 /* SnapKit */; };
 		A29A76852C32905F00CAC746 /* TabBarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A29A76842C32905F00CAC746 /* TabBarVC.swift */; };
 		A29A76892C332D9F00CAC746 /* FavoriteVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A29A76882C332D9F00CAC746 /* FavoriteVC.swift */; };
+		A29A768C2C33D2DA00CAC746 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A29A768B2C33D2DA00CAC746 /* SearchView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		A29A76792C327EF800CAC746 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A29A76842C32905F00CAC746 /* TabBarVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarVC.swift; sourceTree = "<group>"; };
 		A29A76882C332D9F00CAC746 /* FavoriteVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteVC.swift; sourceTree = "<group>"; };
+		A29A768B2C33D2DA00CAC746 /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,8 +64,8 @@
 			children = (
 				A29A766B2C327EF700CAC746 /* AppDelegate.swift */,
 				A29A766D2C327EF700CAC746 /* SceneDelegate.swift */,
-				A29A768A2C332DA900CAC746 /* FavoriteModule */,
 				A29A76872C332D7900CAC746 /* TabBar */,
+				A29A768A2C332DA900CAC746 /* FavoriteModule */,
 				A29A76862C332D6700CAC746 /* SearchModele */,
 				A29A76742C327EF800CAC746 /* Assets.xcassets */,
 				A29A76762C327EF800CAC746 /* LaunchScreen.storyboard */,
@@ -76,6 +78,7 @@
 			isa = PBXGroup;
 			children = (
 				A29A766F2C327EF700CAC746 /* SearchVC.swift */,
+				A29A768B2C33D2DA00CAC746 /* SearchView.swift */,
 			);
 			path = SearchModele;
 			sourceTree = "<group>";
@@ -176,6 +179,7 @@
 				A29A766C2C327EF700CAC746 /* AppDelegate.swift in Sources */,
 				A29A76852C32905F00CAC746 /* TabBarVC.swift in Sources */,
 				A29A766E2C327EF700CAC746 /* SceneDelegate.swift in Sources */,
+				A29A768C2C33D2DA00CAC746 /* SearchView.swift in Sources */,
 				A29A76892C332D9F00CAC746 /* FavoriteVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
